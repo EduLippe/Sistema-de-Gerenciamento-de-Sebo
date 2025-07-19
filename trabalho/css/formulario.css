@@ -1,0 +1,89 @@
+/* Corpo da página */
+body {
+    background-color: #ffffff;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Navbar */
+.menu-navbar {
+    background-color: #1e3a8a !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-navbar .navbar-brand {
+    font-weight: 700;
+    font-size: 25px;
+    color: #f0f7ff !important;
+}
+
+.menu-navbar .nav-link {
+    font-size: 18px;
+    color: #f0f7ff !important;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.menu-navbar .nav-link:hover,
+.menu-navbar .nav-link:focus {
+    color: #5a7db8 !important;
+    background-color: #0d1b2a; /* azul vibrante */
+    border-radius: 20px 20px 20px 20px;
+}
+
+.titulo-principal {
+    color: #1f2d4d; /* azul escuro */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.formulario-card {
+    background-color: #3b5998;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffff;
+}
+
+/* Label do formulário */
+.label-cor {
+    color: #ffffff; 
+    font-weight: 600;
+}
+
+.btn-salvar {
+    background-color: #5a7db8;
+    color: #fff;
+    border: none;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    border-radius: 15px 15px 30px 30px;
+    padding: 10px 0;
+}
+
+.btn-salvar:hover {
+    background-color: #20921c; 
+    border-color: #335b8e;
+    border-radius: 20px 20px 20px 20px;
+    color: #ffff;
+}
+
+.btn-cancelar {
+    background-color: #6c757d; /* cinza azulado */
+    color: white;
+    border: none;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    border-radius: 15px 15px 30px 30px;
+    padding: 10px 0;
+}
+
+.btn-cancelar:hover {
+    background-color: #831616;
+    border-color: #335b8e;
+    border-radius: 20px 20px 20px 20px;
+    color: #ffff;
+}

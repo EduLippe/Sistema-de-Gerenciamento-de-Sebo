@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Trabalho 1</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- opcional, só se usar jQuery -->
+    <script src="js/scripts.js"></script> <!-- seu JS customizado -->
+
+    <!--FEITO POR MIM-->
+
+    <script>
+        $().ready($(function() {
+            $(".carousel").carousel({
+                interval: 2000
+            });
+    }));
+    </script>
+
+    <link href="css/item.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <nav class="menu-navbar navbar navbar-expand-lg mb-4">
+        <!--navbar: classe padrão do Bootstrap para criar uma navbar.
+            navbar-expand-lg: torna o menu expansível (se adapta em telas pequenas).
+            navbar-dark bg-dark: aplica um tema escuro.
+            mb-4: margem inferior para afastar do conteúdo.-->
+
+            <div class="container-fluid"><!-- container-fluid: ocupa toda a largura da tela.-->
+                <a class="navbar-brand" href="inicio.html">LibreriaHonyasan</a><!--navbar-brand: nome ou logo do site-->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item me-3">
+                            <a class="nav-link active" aria-current="page" href="inicio.html">Início</a>
+                        </li>
+                        <li class="nav-item dropdown me-3">
+                            <a class="nav-link dropdown-toggle" href="estoque.html" id="estoqueDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Estoque
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="estoqueDropdown">
+                                <li><a class="dropdown-item" href="estoque_livros.html">Livros</a></li>
+                                <li><a class="dropdown-item" href="estoque_discos.html">Discos</a></li>
+                                <li><a class="dropdown-item" href="estoque_total.html">Estoque Total</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <form class="navbar-form navbar-left" action="">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <div class="input-group-btn">
+                            <button class="btn btn-outline-light" type="submit">
+                                <i class="bi bi-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </nav>
+
+        <div class="container">
+
+            <h1 class="nome-livro">Os segredos da mente milionaria - T. Harv Eker</h1>
+            <h2><strong>R$33,29</strong></h2>
+
+            <div class="row">
+
+                <div class="col-md-6">
+                    <div id="carrossel-imagens" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://http2.mlstatic.com/D_NQ_NP_958059-MLB51616879105_092022-O-livro-fisico-os-segredos-da-mente-milionaria-de-t-harv-eker.webp" class="d-block w-100" alt="segredos">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://http2.mlstatic.com/D_NQ_NP_873057-MLB51012578222_082022-O-livro-fisico-os-segredos-da-mente-milionaria-de-t-harv-eker.webp" class="d-block w-100" alt="segredos">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://http2.mlstatic.com/D_NQ_NP_962999-MLB51012434972_082022-O-livro-fisico-os-segredos-da-mente-milionaria-de-t-harv-eker.webp" class="d-block w-100" alt="segredos">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carrossel-imagens" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carrossel-imagens" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Próximo</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    
+                    <div class="texto-lateral">
+                        <h3><strong>Informações Gerais</strong></h3>
+                        <p><strong>Título:</strong> Os secredos da mente milionaria</p>
+                        <p><strong>Autor:</strong> T. Harv Eker</p>
+                        <p><strong>Idioma:</strong> Português</p>
+                        <p><strong>Páginas:</strong> 176</p>
+                        <p><strong>Editora:</strong> Editora Sextante</p>
+                        <p><strong>Data Publicação:</strong> 26 julho 2006</p>
+                
+                        <h3><strong>Descrição</strong></h3>
+                        <p>T. Harv Eker desmistifica o motivo pelo qual algumas pessoas estão destinadas à riqueza e outras a uma vida de dureza. Se você quer conhecer as causas fundamentais do sucesso, leia este livro." – Robert G. Allen, autor de  O milionário em um minuto</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Botões de contato -->
+            <div class="botoes mt-4">
+
+                <a href="formulario_adicionar_livros.html" class="btn botao-editar">
+                    <i class="bi bi-pen"></i>
+                    <span><strong>Editar</strong></span>
+                </a>
+
+            </div>
+            
+            <div class="sinopse">
+                <h3><strong>Sinopse</strong></h3>
+                <p>Se as suas finanças andam na corda bamba, talvez esteja na hora de você refletir sobre o que T. Harv Eker chama de "o seu modelo de dinheiro" – um conjunto de crenças que cada um de nós alimenta desde a infância e que molda o nosso destino financeiro, quase sempre nos levando para uma situação difícil.
+                Nesse livro, Eker mostra como substituir uma mentalidade destrutiva – que você talvez nem perceba que tem – pelos "arquivos de riqueza", 17 modos de pensar e agir que distinguem os ricos das demais pessoas. Alguns desses princípios fundamentais são:
+
+                <br>• Ou você controla o seu dinheiro ou ele controlará você.<br>• O hábito de administrar as finanças é mais importante do que a quantidade de dinheiro que você tem.
+                <br>• A sua motivação para enriquecer é crucial: se ela possui uma raiz negativa, como o medo, a raiva ou a necessidade de provar algo a si mesmo, o dinheiro nunca lhe trará felicidade.
+                <br>• O segredo do sucesso não é tentar evitar os problemas nem se livrar deles, mas crescer pessoalmente para se tornar maior do que qualquer adversidade.
+                <br>• Os gastos excessivos têm pouco a ver com o que você está comprando e tudo a ver com a falta de satisfação na sua vida.
+                <br>O autor também ensina um método eficiente de administrar o dinheiro. Você aprenderá a estabelecer sua remuneração pelos resultados que apresenta e não pelas horas que trabalha. Além disso, saberá como aumentar o seu patrimônio líquido – a verdadeira medida da riqueza.
+                A ideia é fazer o seu dinheiro trabalhar para você tanto quanto você trabalha para ele. Para isso, é necessário poupar e investir em vez de gastar. "Enriquecer não diz respeito somente a ficar rico em termos financeiros", diz Eker. "É mais do que isso: trata-se da pessoa que você se torna para alcançar esse objetivo."</p>
+            </div>
+        </div>
+    
+</body>
+</html>

@@ -1,0 +1,72 @@
+body {
+    background-image: url('ChatGPT\ Image\ 16\ de\ jul.\ de\ 2025\,\ 23_46_23.png');
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.menu-navbar .nav-link {
+    color: #1e3a8a;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.fundo-retangulo {
+    position: relative;
+    background-color: #1e3a8a;
+    border-radius: 15px 15px 15px 15px;
+    padding: 18px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+    width: 420px;
+    height: 540px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cartao-login {
+    background-color: #ffffff;
+    border-radius: 15px 15px 15px 15px;
+    border: none;
+    width: 410px;
+    height: 500px;
+}
+
+.botao-entrar {
+    border-radius: 15px 15px 30px 30px;
+    background-color: #1e3a8a;
+    color: #ffffff;
+    font-size: 18px;
+    width: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.botao-entrar:hover {
+    background-color: #c7d9f1; 
+    border-color: #335b8e;
+    border-radius: 20px 20px 20px 20px;
+    color: #1e3a8a;
+}
+
+.titulo-login {
+    color: #0d1b2a; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.texto-lembrar {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #0d1b2a;
+}
+
+.texto-login {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #0d1b2a;
+}
+
+.texto-senha {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #0d1b2a;
+}
+
+.texto-email {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #0d1b2a;
+}

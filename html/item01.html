@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Trabalho 1</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--FEITO POR MIM-->
+
+    <script>
+        $().ready($(function() {
+            $(".carousel").carousel({
+                interval: 2000
+            });
+    }));
+    </script>
+
+    <link href="css/item.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <nav class="menu-navbar navbar navbar-expand-lg mb-4">
+        <!--navbar: classe padrão do Bootstrap para criar uma navbar.
+            navbar-expand-lg: torna o menu expansível (se adapta em telas pequenas).
+            navbar-dark bg-dark: aplica um tema escuro.
+            mb-4: margem inferior para afastar do conteúdo.-->
+
+            <div class="container-fluid"> <!-- container-fluid: ocupa toda a largura da tela.-->
+                <a class="navbar-brand" href="inicio.html">LibreriaHonyasan</a> <!--navbar-brand: nome ou logo do site-->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item me-3">
+                            <a class="nav-link active" aria-current="page" href="inicio.html">Início</a>
+                        </li>
+                        <li class="nav-item dropdown me-3">
+                            <a class="nav-link dropdown-toggle" href="estoque.html" id="estoqueDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Estoque
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="estoqueDropdown">
+                                <li><a class="dropdown-item" href="estoque_livros.html">Livros</a></li>
+                                <li><a class="dropdown-item" href="estoque_discos.html">Discos</a></li>
+                                <li><a class="dropdown-item" href="estoque_total.html">Estoque Total</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <form class="navbar-form navbar-left" action="">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <div class="input-group-btn">
+                            <button class="btn btn-outline-light" type="submit">
+                                <i class="bi bi-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </nav>
+
+        <div class="container">
+
+            <h1 class="nome-livro">Suicidas - Raphael Montes</h1>
+            <h2><strong>R$40,30</strong></h2>
+
+            <div class="row">
+
+                <div class="col-md-6">
+                    <div id="carrossel-imagens" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://m.media-amazon.com/images/I/71AeB1+8dZL._SY466_.jpg" class="d-block w-100" alt="jantar">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://m.media-amazon.com/images/I/81cKKwQF0uL._SY466_.jpg" class="d-block w-100" alt="jantar">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://m.media-amazon.com/images/I/61fC7sXwhEL._SL1500_.jpg" class="d-block w-100" alt="jantar">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carrossel-imagens" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carrossel-imagens" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Próximo</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    
+                    <div class="texto-lateral">
+                        <h3><strong>Informações Gerais</strong></h3>
+                        <p><strong>Título:</strong> Jantar Secreto</p>
+                        <p><strong>Autor:</strong> Raphael Montes</p>
+                        <p><strong>Idioma:</strong> Português</p>
+                        <p><strong>Páginas:</strong> 368</p>
+                        <p><strong>Editora:</strong> Companhia das Letras</p>
+                        <p><strong>Data Publicação:</strong> 14 de novembro 2016</p>
+                
+                        <h3><strong>Descrição</strong></h3>
+                        <p>Romance com mais de 100 mil exemplares vendidos, Jantar secreto conta a história de um grupo de amigos que se muda para o Rio de Janeiro e passa a organizar jantares misteriosos.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Botões de contato -->
+            <div class="botoes mt-4">
+
+                <a href="formulario_adicionar_livros.html" class="btn botao-editar">
+                    <i class="bi bi-pen"></i>
+                    <span><strong>Editar</strong></span>
+                </a>
+
+            </div>
+            
+            <div class="sinopse">
+                <h3><strong>Sinopse</strong></h3>
+                <p><strong>Um grupo de jovens deixa uma pequena cidade no Paraná para viver no Rio de Janeiro. Eles alugam um apartamento em Copacabana e fazem o possível para pagar a faculdade e manter vivos seus sonhos de sucesso na capital fluminense.
+                Mas o dinheiro está curto e o aluguel está vencido. Para sair do buraco e manter o apartamento, os amigos adotam uma estratégia heterodoxa: arrecadar fundos por meio de jantares secretos, divulgados pela internet para uma clientela exclusiva da elite carioca.
+                A partir daí, eles se envolvem em uma espiral de crimes, descobrem uma rede de contrabando de corpos, matadouros clandestinos e grã-finos excêntricos, e levam ao limite uma índole perversa que jamais imaginaram existir em cada um deles.</p>
+            </div>
+        </div>
+    
+</body>
+</html>

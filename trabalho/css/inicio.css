@@ -1,0 +1,99 @@
+body {
+    background-color: #ffffff;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+h1 {
+    font-size: 36px;
+    color: #1e3a8a;
+}
+
+/* Sidebar */
+.sidebar {
+    border-radius: 0 15px 15px 0;
+    height: 100vh;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #1e3a8a;
+    padding: 1.5rem 1rem;
+    box-shadow: 4px 0 12px rgba(0, 0, 0, 0.1); /* sombra de leve */
+}
+
+.sidebar .nav-link {
+    color: #ffffff;
+    font-weight: 500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link:focus {
+    color: #5a7db8 !important;
+    background-color: #0d1b2a; /* azul vibrante */
+    border-radius: 20px 20px 20px 20px;
+}
+
+.nome-empresa {
+    font-size: 28px;
+    text-align: center;
+    width: 100%;
+    color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-bottom: 10px;
+}
+
+.boas-vindas {
+    font-size: 35px;
+    margin-left: 250px;
+    padding: 2rem;
+    text-align: center;
+    color: #0d1b2a; /* azul bem escuro */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+    position: absolute;
+    left: 270px;
+    margin-left: 140px; /* Compensa a sidebar */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;    /* empilha ícone e texto verticalmente */
+    align-items: center;       /* centraliza horizontalmente */
+    justify-content: center;   /* centraliza verticalmente */
+    gap: 10px;                 /* espaço entre ícone e texto */
+    
+    background-color: #1e3a8a;
+    width: 350px;
+    height: 750px;
+    border-radius: 15px;
+    margin-top: 45px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* sombra de leve */
+
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+
+    /* Transição suave */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+/* Efeito que eleva o item */
+.item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Ícone dentro do item */
+.item .bi {
+    font-size: 80px;
+    padding: 0;
+    color: #1e3a8a; 
+}
