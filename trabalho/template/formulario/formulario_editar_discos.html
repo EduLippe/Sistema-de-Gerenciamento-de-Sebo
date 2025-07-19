@@ -58,6 +58,33 @@
         </div>
     </nav>
     
+<div class="container mt-4">
+        <h1 class="text-center mb-4 titulo-principal">Disco que deseja Editar</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="card formulario-card p-4">
+                    <form id="formDisco" action="php/inserir_disco.php" method="post">
+                        <div class="mb-3">
+                            <label for="titulo" class="form-label label-cor">Título</label>
+                            <input type="text" class="form-control" id="titulo" name="titulo">
+                            <div class="invalid-feedback">Preencha com o nome do Disco.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="autor" class="form-label label-cor">Cantor</label>
+                            <input type="text" class="form-control" id="cantor" name="cantor">
+                            <div class="invalid-feedback">Preencha com o nome do Cantor.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="editora" class="form-label label-cor">Gravadora</label>
+                            <input type="text" class="form-control" id="gravadora" name="gravadora">
+                            <div class="invalid-feedback">Insira a gravadora do disco.</div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- FORMULÁRIO -->
     <div class="container mt-4">
         <h1 class="text-center mb-4 titulo-principal">Editar Disco</h1>
