@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <!--FEITO POR MIM-->
 
@@ -20,7 +21,7 @@
     }));
     </script>
 
-    <link href="css/item.css" rel="stylesheet">
+    <link href="../../css/item.css" rel="stylesheet">
     </head>
     <body>
 
@@ -31,24 +32,24 @@
             mb-4: margem inferior para afastar do conteúdo.-->
 
             <div class="container-fluid"><!-- container-fluid: ocupa toda a largura da tela.-->
-                <a class="navbar-brand" href="inicio.html">LibreriaHonyasan</a><!--navbar-brand: nome ou logo do site-->
+                <a class="navbar-brand" href="../inicio/inicio.html">LibreriaHonyasan</a><!--navbar-brand: nome ou logo do site-->
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item me-3">
-                            <a class="nav-link active" aria-current="page" href="inicio.html">Início</a>
+                            <a class="nav-link active" aria-current="page" href="../inicio/inicio.html">Início</a>
                         </li>
                         <li class="nav-item dropdown me-3">
                             <a class="nav-link dropdown-toggle" href="estoque.html" id="estoqueDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Estoque
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="estoqueDropdown">
-                                <li><a class="dropdown-item" href="estoque_livros.html">Livros</a></li>
-                                <li><a class="dropdown-item" href="estoque_discos.html">Discos</a></li>
-                                <li><a class="dropdown-item" href="estoque_total.html">Estoque Total</a></li>
+                                <li><a class="dropdown-item" href="../estoque/estoque_livros.html">Livros</a></li>
+                                <li><a class="dropdown-item" href="../estoque/estoque_discos.html">Discos</a></li>
+                                <li><a class="dropdown-item" href="../estoque/estoque_total.html">Estoque Total</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="login.html">Logout</a>
+                            <a class="nav-link" href="../login/login.html">Logout</a>
                         </li>
                     </ul>
                 </div>
@@ -68,8 +69,8 @@
 
         <div class="container">
 
-            <h1 class="nome-livro">Suicidas - Raphael Montes</h1>
-            <h2><strong>R$69,90</strong></h2>
+            <h1 class="nome-livro">Jantar Secreto - Raphael Montes</h1>
+            <h2><strong>R$40,30</strong></h2>
 
             <div class="row">
 
@@ -78,13 +79,17 @@
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carrossel-imagens" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                             <button type="button" data-bs-target="#carrossel-imagens" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carrossel-imagens" data-bs-slide-to="2" aria-label="Slide 3"></button>
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="https://m.media-amazon.com/images/I/81XqiNjr5OL._SY466_.jpg" class="d-block w-100" alt="Suicidas">
+                                <img src="https://m.media-amazon.com/images/I/71AeB1+8dZL._SY466_.jpg" class="d-block w-100" alt="jantar">
                             </div>
                             <div class="carousel-item">
-                                <img src="https://m.media-amazon.com/images/I/819xh8JAtAL._SY466_.jpg" class="d-block w-100" alt="Suicidas">
+                                <img src="https://m.media-amazon.com/images/I/81cKKwQF0uL._SY466_.jpg" class="d-block w-100" alt="jantar">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://m.media-amazon.com/images/I/61fC7sXwhEL._SL1500_.jpg" class="d-block w-100" alt="jantar">
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carrossel-imagens" data-bs-slide="prev">
@@ -102,16 +107,16 @@
                     
                     <div class="texto-lateral">
                         <h3><strong>Informações Gerais</strong></h3>
-                        <p><strong>Título:</strong> Suicidas</p>
+                        <p><strong>Título:</strong> Jantar Secreto</p>
                         <p><strong>Autor:</strong> Raphael Montes</p>
                         <p><strong>Idioma:</strong> Português</p>
-                        <p><strong>Páginas:</strong> 342</p>
+                        <p><strong>Páginas:</strong> 368</p>
                         <p><strong>Editora:</strong> Companhia das Letras</p>
-                        <p><strong>Data Publicação:</strong> 7 Agosto 2017</p>
-                        <p><strong>Quantidade Estoque:</strong> 5</p>
+                        <p><strong>Data Publicação:</strong> 14 de novembro 2016</p>
+                        <p><strong>Quantidade Estoque:</strong> 10</p>
+                
                         <h3><strong>Descrição</strong></h3>
-                        <p>Suicidas é o primeiro livro publicado pelo meu queridinho Raphael Montes, ele foi relançado pela Companhia das Letras neste ano de 2017 e a editora fez a 
-                        gentileza de nos ceder um exemplar para resenha dessa história sobre nove jovens que se juntaram em um porão para jogar roleta-russa.</p>
+                        <p>Romance com mais de 100 mil exemplares vendidos, Jantar secreto conta a história de um grupo de amigos que se muda para o Rio de Janeiro e passa a organizar jantares misteriosos.</p>
                     </div>
 
                 </div>
@@ -120,7 +125,7 @@
             <!-- Botões de contato -->
             <div class="botoes mt-4">
 
-                <a href="formulario_editar_livros.html" class="btn botao-editar">
+                <a href="../formulario/formulario_editar_livros.html" class="btn botao-editar">
                     <i class="bi bi-pen"></i>
                     <span><strong>Editar</strong></span>
                 </a>
@@ -129,15 +134,9 @@
             
             <div class="sinopse">
                 <h3><strong>Sinopse</strong></h3>
-                <p><strong>O PRIMEIRO ROMANCE DO JOVEM AUTOR QUE SE FIRMOU COMO PRINCIPAL NOME DO NOVO SUSPENSE BRASILEIRO.</strong>Antes que o mundo pudesse sonhar com o terrível jogo da baleia azul, que leva jovens a tirara própria vida, ou que a série de televisão 13 Reasons Why fosse lançada e se tornasse o sucesso que é hoje, Raphael Montes, então com 22 anos,já tratava do tema do suicídio entre jovens, com a ousadia que virou sua marca registrada. Em seu primeiro livro, que a Companhia das Letras agora relança acrescido de um novo capítulo, conhecemos a história de Alê e seus colegas, jovens da elite carioca encontra dos mortos no porão do sítio de um deles em condições misteriosas que indicam que os nove amigos participaram de um perigoso e fatídico jogo de roleta russa. Aos que ficaram, resta tentar descobrir o que teria levado aqueles adolescentes, aparentemente felizes e privilegiados, a tirar a própria vida. Para isso, contamos com os escritos deixados por Alê, um narrador nada confiável.<br>
-                <br>O livro começa pela narrativa em primeira pessoa de Alessandro, que está escrevendo um livro onde narra os acontecimentos em tempo real enquanto ele e mais oito amigos se encaminham para a Cyrille's House, onde eles vão jogar roleta-russa até que nenhum deles sobreviva para contar a história. O segundo ponto de vista do livro também é sob a perspectiva de Alessandro, desta vez com escritos que foram encontrados em seus diários relatando tudo o que acontecia em sua vida. E, por fim, a gravação de uma reunião realizada com uma delegada e as setes mães dos jovens que morreram naquele porão um ano antes.
-                Há mais famosos mortos do que vivos. A morte traz fama e reconhecimento. Quando eu morrer, vão querer saber o que aconteceu aqui, e meu trabalho será reconhecido... espero.
-                A história vai sendo contada através destas três perspectivas, apresentando os personagens ao leitor e oferecendo vislumbres dos fatos 
-                que ocorreram e que acabaram por levar aqueles nove jovens a atitudes tão extremas. Embora todos os personagens tenham sua importância, 
-                o destaque da história fica com Alessandro e Zak, o primeiro por ser o narrador e o segundo por ser melhor amigo deste, e líder natural
-                do grupo. É impossível desenvolver comentários mais aprofundados sobre a trama sem correr o risco de esbarrar em alguns spoilers, 
-                portanto, basta dizer que o livro se trata da reconstituição dos dias anteriores ao suicídio coletivo até poucos minutos do momento 
-                final.</p>
+                <p><strong>Um grupo de jovens deixa uma pequena cidade no Paraná para viver no Rio de Janeiro. Eles alugam um apartamento em Copacabana e fazem o possível para pagar a faculdade e manter vivos seus sonhos de sucesso na capital fluminense.
+                Mas o dinheiro está curto e o aluguel está vencido. Para sair do buraco e manter o apartamento, os amigos adotam uma estratégia heterodoxa: arrecadar fundos por meio de jantares secretos, divulgados pela internet para uma clientela exclusiva da elite carioca.
+                A partir daí, eles se envolvem em uma espiral de crimes, descobrem uma rede de contrabando de corpos, matadouros clandestinos e grã-finos excêntricos, e levam ao limite uma índole perversa que jamais imaginaram existir em cada um deles.</p>
             </div>
         </div>
     

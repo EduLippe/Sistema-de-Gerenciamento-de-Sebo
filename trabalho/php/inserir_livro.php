@@ -43,12 +43,12 @@
         }
 
         $stmt->close();
-        header("Location: /Trabalho/trabalho/formulario_adicionar_livros.html");
+        header("Location: /Trabalho/trabalho/template/formulario/formulario_adicionar_livros.html");
         exit;
         
     } else { // Campos obrigatórios não preenchidos
 
-        header("Location: /Trabalho/trabalho/formulario_adicionar_livros.html");
+        header("Location: /Trabalho/trabalho/template/formulario/formulario_adicionar_livros.html");
         exit;
     }
 

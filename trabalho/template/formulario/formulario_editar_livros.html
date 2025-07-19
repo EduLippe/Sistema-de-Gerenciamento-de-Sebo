@@ -9,8 +9,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     
-    <link href="css/formulario.css" rel="stylesheet">
+    <link href="../../css/formulario.css" rel="stylesheet">
 </head>
 
 <body>
@@ -60,16 +61,15 @@
 
     <!-- FORMULÁRIO -->
     <div class="container mt-4">
-        <h1 class="text-center mb-4 titulo-principal">Remover Livro</h1>
+        <h1 class="text-center mb-4 titulo-principal">Editar Livro</h1>
         <div class="row justify-content-center">
             <div class="col-md-8 col-lg-6">
                 <div class="card formulario-card p-4">
-                    <form id="formDisco" action="./php/remover_livro.php" method="post">
+                    <form id="formDisco" action="php/inserir_livro.php" method="post">
                         <div class="mb-3">
                             <label for="tituloLivro" class="form-label label-cor">Título</label>
                             <input type="text" class="form-control" id="tituloLivro" name="titulo">
-                            <div class="invalid-feedback">Preencha com o nome do Livro.</div>
-
+                            <div class="invalid-feedback">Preencha com o nome do Livro</div>
                         </div>
                         <div class="mb-3">
                             <label for="autorLivro" class="form-label label-cor">Autor</label>
@@ -85,20 +85,35 @@
                             <label for="editoraLivro" class="form-label label-cor">Editora</label>
                             <input type="text" class="form-control" id="editoraLivro" name="editora">
                             <div class="invalid-feedback">Insira a editora do livro.</div>
-
                         </div>
                         <div class="mb-3">
-                            <label for="quantidadeLivro" class="form-label label-cor">Quantidade</label>
-                            <input type="number" class="form-control" id="quantidadeLivro" name="quantidade" min="0">
-                            <div class="invalid-feedback">Insira a quantidade do livros.</div>
+                            <label for="anoPublicacaoLivro" class="form-label label-cor">Ano de Publicação</label>
+                            <input type="date" class="form-control" id="anoPublicacaoLivro" name="ano_publicacao">
+                            <div class="invalid-feedback">Insira a data de publicação.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="anoPublicacao" class="form-label label-cor">Quantidade</label>
+                            <input type="number" class="form-control" id="quantidade" name="quantidade">
+                            <div class="invalid-feedback">Insira a quantidade de Livros.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="urlImagemLivro" class="form-label label-cor">URL da Imagem</label>
+                            <input type="url" class="form-control" id="urlImagemLivro" name="url_imagem" placeholder="https://exemplo.com/imagem.jpg">
+                        </div>
+                        <div class="mb-3">
+                            <label for="descricao" class="form-label label-cor">Descrição</label>
+                            <textarea class="form-control" id="descricao" name="descricao" rows="4"></textarea> <!--Usado para textos grandes-->
+                            <div class="invalid-feedback">Insira uma descrição para o livro.</div>
+                        </div>
+                        <div class="mb-5">
+                            <label for="sinopse" class="form-label label-cor">Sinopse</label>
+                            <textarea class="form-control" id="sinopse" name="sinopse" rows="6"></textarea> <!--Usado para textos grandes-->
+                            <div class="invalid-feedback">Insira uma sinopse sobre o livro.</div>
                         </div>
                         <div class="d-grid gap-2">
-                            <button type="submit" class="btn btn-salvar">Remover</button>
+                            <button type="submit" class="btn btn-salvar">Salvar</button>
                             <a href="estoque_livros.html" class="btn btn-cancelar">Cancelar</a>
                         </div>
-                        <div id="alerta-remocao" class="alert alert-success text-center d-none" role="alert">
-                            Remoção realizada com sucesso!
-                        </div> <!--Teste se precisar remover-->
                     </form>
                 </div>
             </div>
@@ -117,9 +132,10 @@
             // cria variaveis para o codigo js
             let titulo = $('#tituloLivro').val().trim();
             let autor = $('#autorLivro').val().trim();
-            let paginas = $('#paginasLivro').val().trim()
+            let paginas = $('#paginasLivro').val().trim();
             let editora = $('#editoraLivro').val().trim();
-            let quantidade = $('#quantidadeLivro').val().trim()
+            let anoPublicacaoLivro = $('#anoPublicacaoLivro').val().trim();
+            let quantidade = $('#quantidade').val().trim()
 
             // faz a verificação dos campos
             if (titulo === '') {
@@ -132,34 +148,16 @@
                 valido = false;
             }
 
-            if (paginas === '') {
-                $('#paginasLivro').addClass('is-invalid');
-                valido = false;
-            }
-
             if (editora === '') {
                 $('#editoraLivro').addClass('is-invalid');
-                valido = false;
-            }
-
-            if (quantidade === '') {
-                $('#quantidadeLivro').addClass('is-invalid');
                 valido = false;
             }
 
             if (!valido) { // não deixa enviar se o campo estiver vazio
                 e.preventDefault();
             } else {
-                $('#alerta-remocao').removeClass('d-none');
-
-                // Espera 2 segundos antes de redirecionar
-                setTimeout(() => {
-                    window.location.href = "formulario_remover_livros.html";
-                }, 2000);
-
-                //e.preventDefault(); // ainda previne para mostrar o alerta antes de redirecionar
-                //$('#alerta-remocao').removeClass('d-none');
-                //window.location.href = "formulario_remover_livros.html";//<!--Teste se precisar remover-->
+            alert("Cadastro realizado com sucesso!");
+            window.location.href = "estoque_livros.html";
             }
         });
     });

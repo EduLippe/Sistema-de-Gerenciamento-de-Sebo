@@ -28,21 +28,21 @@
                 $update->bind_param("ii", $novaQuantidade, $disco['id']);
 
                 if ($update->execute()) {
-                    header("Location: /Trabalho/trabalho/formulario_remover_discos.html");
+                    header("Location: /Trabalho/trabalho/template/formulario/formulario_remover_discos.html");
                     exit;
                 } else {
-                    header("Location: /Trabalho/trabalho/formulario_remover_discos.html" . $update->error);
+                    header("Location: /Trabalho/trabalho/template/formulario/formulario_remover_discos.html" . $update->error);
                 }
             } else {
-                header("Location: /Trabalho/trabalho/formulario_remover_discos.html");
+                header("Location: /Trabalho/trabalho/template/formulario/formulario_remover_discos.html");
             }
         } else {
-            header("Location: /Trabalho/trabalho/formulario_remover_discos.html");
+            header("Location: /Trabalho/trabalho/template/formulario/formulario_remover_discos.html");
         }
 
         $stmt->close();
     } else {
-        header("Location: /Trabalho/trabalho/formulario_remover_discos.html");
+        header("Location: /Trabalho/trabalho/template/formulario/formulario_remover_discos.html");
     }
 
     $conexao->close();

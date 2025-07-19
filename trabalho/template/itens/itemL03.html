@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <!--FEITO POR MIM-->
 
@@ -20,7 +21,7 @@
     }));
     </script>
 
-    <link href="css/item.css" rel="stylesheet">
+    <link href="../../css/item.css" rel="stylesheet">
     </head>
     <body>
 
@@ -31,24 +32,24 @@
             mb-4: margem inferior para afastar do conteúdo.-->
 
             <div class="container-fluid"><!-- container-fluid: ocupa toda a largura da tela.-->
-                <a class="navbar-brand" href="inicio.html">LibreriaHonyasan</a><!--navbar-brand: nome ou logo do site-->
+                <a class="navbar-brand" href="../inicio/inicio.html">LibreriaHonyasan</a><!--navbar-brand: nome ou logo do site-->
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item me-3">
-                            <a class="nav-link active" aria-current="page" href="inicio.html">Início</a>
+                            <a class="nav-link active" aria-current="page" href="../inicio/inicio.html">Início</a>
                         </li>
                         <li class="nav-item dropdown me-3">
-                            <a class="nav-link dropdown-toggle" href="estoque.html" id="estoqueDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="../estoque/estoque.html" id="estoqueDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Estoque
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="estoqueDropdown">
-                                <li><a class="dropdown-item" href="estoque_livros.html">Livros</a></li>
-                                <li><a class="dropdown-item" href="estoque_discos.html">Discos</a></li>
-                                <li><a class="dropdown-item" href="estoque_total.html">Estoque Total</a></li>
+                                <li><a class="dropdown-item" href="../estoque/estoque_livros.html">Livros</a></li>
+                                <li><a class="dropdown-item" href="../estoque/estoque_discos.html">Discos</a></li>
+                                <li><a class="dropdown-item" href="../estoque/estoque_total.html">Estoque Total</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/trabalho/login.html">Logout</a>
+                            <a class="nav-link" href="../login/login.html">Logout</a>
                         </li>
                     </ul>
                 </div>
@@ -68,8 +69,8 @@
 
         <div class="container">
 
-            <h1 class="nome-livro">A Turma do Balão Mágico (Volume 1)</h1>
-            <h2><strong>R$29,90</strong></h2>
+            <h1 class="nome-livro">Os segredos da mente milionaria - T. Harv Eker</h1>
+            <h2><strong>R$33,29</strong></h2>
 
             <div class="row">
 
@@ -79,20 +80,16 @@
                             <button type="button" data-bs-target="#carrossel-imagens" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                             <button type="button" data-bs-target="#carrossel-imagens" data-bs-slide-to="1" aria-label="Slide 2"></button>
                             <button type="button" data-bs-target="#carrossel-imagens" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                            <button type="button" data-bs-target="#carrossel-imagens" data-bs-slide-to="3" aria-label="Slide 4"></button>
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="https://s3.amazonaws.com/vinils3/wp-content/uploads/2014/07/TURMA-DO-BAL%C3%83O-MAGICO-300x300.jpg" class="d-block w-100" alt="segredos">
+                                <img src="https://http2.mlstatic.com/D_NQ_NP_958059-MLB51616879105_092022-O-livro-fisico-os-segredos-da-mente-milionaria-de-t-harv-eker.webp" class="d-block w-100" alt="segredos">
                             </div>
                             <div class="carousel-item">
-                                <img src="https://s3.amazonaws.com/vinils3/wp-content/uploads/2014/07/A-turma-do-bal%C3%A1o-magico-4-300x300.jpg" class="d-block w-100" alt="segredos">
+                                <img src="https://http2.mlstatic.com/D_NQ_NP_873057-MLB51012578222_082022-O-livro-fisico-os-segredos-da-mente-milionaria-de-t-harv-eker.webp" class="d-block w-100" alt="segredos">
                             </div>
                             <div class="carousel-item">
-                                <img src="https://s3.amazonaws.com/vinils3/wp-content/uploads/2014/07/A-turma-do-bal%C3%A1o-magico-2-300x300.jpg" class="d-block w-100" alt="segredos">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="https://s3.amazonaws.com/vinils3/wp-content/uploads/2014/07/TURMA-DO-BAL%C3%83O-MAGICO-1-300x300.jpg" class="d-block w-100" alt="segredos">
+                                <img src="https://http2.mlstatic.com/D_NQ_NP_962999-MLB51012434972_082022-O-livro-fisico-os-segredos-da-mente-milionaria-de-t-harv-eker.webp" class="d-block w-100" alt="segredos">
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carrossel-imagens" data-bs-slide="prev">
@@ -110,15 +107,16 @@
                     
                     <div class="texto-lateral">
                         <h3><strong>Informações Gerais</strong></h3>
-                        <p><strong>Título:</strong> A Turma do Balão Mágico (Volume 1)</p>
-                        <p><strong>Autor:</strong> A Turma do Balão Mágico</p>
+                        <p><strong>Título:</strong> Os secredos da mente milionaria</p>
+                        <p><strong>Autor:</strong> T. Harv Eker</p>
                         <p><strong>Idioma:</strong> Português</p>
-                        <p><strong>Faixas:</strong> 13</p>
-                        <p><strong>Gravadora:</strong> CBS (atualmente Sony Music)</p>
-                        <p><strong>Data Lançamento:</strong> 1982</p>
-                        <p><strong>Quantidade Estoque:</strong> 4</p>
-                        
-                
+                        <p><strong>Páginas:</strong> 176</p>
+                        <p><strong>Editora:</strong> Editora Sextante</p>
+                        <p><strong>Data Publicação:</strong> 26 julho 2006</p>
+                        <p><strong>Quantidade Estoque:</strong> 10</p>
+
+                        <h3><strong>Descrição</strong></h3>
+                        <p>T. Harv Eker desmistifica o motivo pelo qual algumas pessoas estão destinadas à riqueza e outras a uma vida de dureza. Se você quer conhecer as causas fundamentais do sucesso, leia este livro." – Robert G. Allen, autor de  O milionário em um minuto</p>
                     </div>
 
                 </div>
@@ -127,7 +125,7 @@
             <!-- Botões de contato -->
             <div class="botoes mt-4">
 
-                <a href="formulario_editar_discos.html" class="btn botao-editar">
+                <a href="../formulario/formulario_editar_livros.html" class="btn botao-editar">
                     <i class="bi bi-pen"></i>
                     <span><strong>Editar</strong></span>
                 </a>
@@ -135,24 +133,17 @@
             </div>
             
             <div class="sinopse">
-                <h3><strong>Faixas do Disco</strong></h3>
-                <p><strong>Lado A:</strong>
-                    <br>1. A Turma do Balão Mágico
-                    <br>2. Amigos do Peito
-                    <br>3. Dançando com o Balão
-                    <br>4. Se Enamora
-                    <br>5. Travesseiro
-                    <br>6. Superfantástico
-                    <br><strong>Lado B:</strong>
-                    <br>7. Ursinho Pimpão
-                    <br>8. Mãe, Me Dá Um Dinheirinho
-                    <br>9. É Tão Lindo
-                    <br>10. Baile dos Passarinhos
-                    <br>11. O Que Cantam as Crianças
-                    <br>12. O Circo do Seu Lé
-                    <br>13. Lindo Balão Azul</p>
+                <h3><strong>Sinopse</strong></h3>
+                <p>Se as suas finanças andam na corda bamba, talvez esteja na hora de você refletir sobre o que T. Harv Eker chama de "o seu modelo de dinheiro" – um conjunto de crenças que cada um de nós alimenta desde a infância e que molda o nosso destino financeiro, quase sempre nos levando para uma situação difícil.
+                Nesse livro, Eker mostra como substituir uma mentalidade destrutiva – que você talvez nem perceba que tem – pelos "arquivos de riqueza", 17 modos de pensar e agir que distinguem os ricos das demais pessoas. Alguns desses princípios fundamentais são:
+
+                <br>• Ou você controla o seu dinheiro ou ele controlará você.<br>• O hábito de administrar as finanças é mais importante do que a quantidade de dinheiro que você tem.
+                <br>• A sua motivação para enriquecer é crucial: se ela possui uma raiz negativa, como o medo, a raiva ou a necessidade de provar algo a si mesmo, o dinheiro nunca lhe trará felicidade.
+                <br>• O segredo do sucesso não é tentar evitar os problemas nem se livrar deles, mas crescer pessoalmente para se tornar maior do que qualquer adversidade.
+                <br>• Os gastos excessivos têm pouco a ver com o que você está comprando e tudo a ver com a falta de satisfação na sua vida.
+                <br>O autor também ensina um método eficiente de administrar o dinheiro. Você aprenderá a estabelecer sua remuneração pelos resultados que apresenta e não pelas horas que trabalha. Além disso, saberá como aumentar o seu patrimônio líquido – a verdadeira medida da riqueza.
+                A ideia é fazer o seu dinheiro trabalhar para você tanto quanto você trabalha para ele. Para isso, é necessário poupar e investir em vez de gastar. "Enriquecer não diz respeito somente a ficar rico em termos financeiros", diz Eker. "É mais do que isso: trata-se da pessoa que você se torna para alcançar esse objetivo."</p>
             </div>
-            
         </div>
     
 </body>

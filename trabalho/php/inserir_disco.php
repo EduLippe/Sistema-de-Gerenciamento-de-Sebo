@@ -43,12 +43,12 @@
         }
 
         $stmt->close();
-        header("Location: /Trabalho/trabalho/formulario_adicionar_discos.html");
+        header("Location: /Trabalho/trabalho/template/formulario/formulario_adicionar_discos.html");
         exit;
         
     } else { // Campos obrigatórios não preenchidos
-        
-        header("Location: /Trabalho/trabalho/formulario_adicionar_discos.html");
+
+        header("Location: /Trabalho/trabalho/template/formulario/formulario_adicionar_discos.html");
         exit;
     }
 

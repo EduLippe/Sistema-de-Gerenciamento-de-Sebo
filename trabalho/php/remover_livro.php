@@ -28,21 +28,21 @@
                 $update->bind_param("ii", $novaQuantidade, $livro['id']);
 
                 if ($update->execute()) {
-                    header("Location: /Trabalho/trabalho/formulario_remover_livros.html");
+                    header("Location: /Trabalho/trabalho/template/formulario/formulario_remover_livros.html");
                     exit;
                 } else {
-                    header("Location: /Trabalho/trabalho/formulario_remover_livros.html" . $update->error);
+                    header("Location: /Trabalho/trabalho/template/formulario/formulario_remover_livros.html" . $update->error);
                 }
             } else {
-                header("Location: /Trabalho/trabalho/formulario_remover_livros.html");
+                header("Location: /Trabalho/trabalho/template/formulario/formulario_remover_livros.html");
             }
         } else {
-            header("Location: /Trabalho/trabalho/formulario_remover_livros.html");
+            header("Location: /Trabalho/trabalho/template/formulario/formulario_remover_livros.html");
         }
 
         $stmt->close();
     } else {
-        header("Location: /Trabalho/trabalho/formulario_remover_livros.html");
+        header("Location: /Trabalho/trabalho/template/formulario/formulario_remover_livros.html");
     }
 
     $conexao->close();

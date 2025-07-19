@@ -20,19 +20,19 @@
         if ($senha === $usuario['senha']) {
             $_SESSION['usuario_id'] = $usuario['id'];
             $_SESSION['usuario_email'] = $usuario['email'];
-            header("Location: /Trabalho/trabalho/inicio.html");
+            header("Location: /Trabalho/trabalho/template/inicio/inicio.html");
 
 
         } 
         
         else { // quando a senha esta incorreta
-            header("Location: /Trabalho/trabalho/login.html");
+            header("Location: /Trabalho/trabalho/template/login/login.html");
         }
         
     } 
 
     else {
-        header("Location: /Trabalho/trabalho/login.html");
+        header("Location: /Trabalho/trabalho/template/login/login.html");
     }
 
     $stmt->close();
