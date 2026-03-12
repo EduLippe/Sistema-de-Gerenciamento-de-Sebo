@@ -1,0 +1,136 @@
+body {
+    background-color: #ffffff;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+h1 {
+    color: #1e3a8a; 
+}
+
+.opcoes-menu {
+    margin-right: 20px;
+}
+
+.menu-navbar {
+    background-color: #1e3a8a !important; /* azul escuro do Facebook */
+    border-radius: 0px 0px 15px 15px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.menu-navbar .navbar-brand {
+    font-weight: 700;
+    font-size: 25px;
+    color: #ffffff; 
+}
+
+.menu-navbar .nav-link {
+    color: #ffffff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.menu-navbar .nav-link:hover,
+.menu-navbar .nav-link:focus {
+    color: #5a7db8 !important;
+    background-color: #0d1b2a; /* azul vibrante */
+    border-radius: 20px 20px 20px 20px;
+}
+
+.nome-empresa {
+    color: #ffffff;
+}
+
+.card-produto {
+    margin-top: 30px;
+    padding: 30px;
+    border: 1px solid #dbeafe;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease-in-out;
+    background-color: #1e3a8a; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card-produto:hover {
+    transform: translateY(-5px);
+}
+
+.card-produto img {
+    height: 300px;
+    object-fit: cover;
+}
+
+.card-produto .card-body {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-produto .card-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff; 
+    margin-bottom: 10px;
+}
+
+.card-produto .autor {
+    font-size: 15px;
+    color: #ffffff;
+}
+
+.card-produto .preco {
+    font-size: 25px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: auto;
+    margin-bottom: 15px;
+}
+
+.card-produto .btn-primary {
+    background-color: #f0f7ff;
+    border-color: #335b8e;
+    border-radius: 20px 20px 60px 60px;
+    width: 100%;
+    color: #1e3a8a;
+}
+
+.card-produto .btn-primary:hover {
+    background-color: #c7d9f1;
+    border-color: #335b8e;
+    border-radius: 20px 20px 20px 20px;
+    color: #1e3a8a;
+}
+
+.botao-formulario {
+    width: 250px;
+    height: 30px;
+    font-size: 18px;
+    border-radius: 15px 15px 30px 30px;
+    background-color: #1e3a8a;
+    color: #ffffff;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.botao-formulario:hover {
+    background-color: #c7d9f1;
+    border-color: #335b8e;
+    border-radius: 20px 20px 20px 20px;
+    color: #1e3a8a;
+}
+
+.botoes-formularios {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Para se ajustar bem em telas pequenas */
+    margin-bottom: 30px;
+}

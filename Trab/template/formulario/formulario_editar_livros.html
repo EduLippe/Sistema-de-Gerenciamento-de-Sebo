@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Cadastrar/Alterar Livro</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <link href="../../css/formulario.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="menu-navbar navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+    <!--navbar: classe padrão do Bootstrap para criar uma navbar.
+        navbar-expand-lg: torna o menu expansível (se adapta em telas pequenas).
+        navbar-dark bg-dark: aplica um tema escuro.
+        mb-4: margem inferior para afastar do conteúdo.-->
+
+        <div class="container-fluid"><!-- container-fluid: ocupa toda a largura da tela.-->
+            <a class="navbar-brand" href="inicio.html">LibreriaHonyasan</a><!--navbar-brand: nome ou logo do site-->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item me-3">
+                        <a class="nav-link active" aria-current="page" href="../inicio/inicio.html">Início</a>
+                    </li>
+                    <li class="nav-item dropdown me-3">
+                        <a class="nav-link dropdown-toggle" href="../estoque/estoque_total.html" id="estoqueDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Estoque
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="estoqueDropdown">
+                            <li><a class="dropdown-item" href="../estoque/estoque_livros.html">Livros</a></li>
+                            <li><a class="dropdown-item" href="../estoque/estoque_discos.html">Discos</a></li>
+                            <li><a class="dropdown-item" href="../estoque/estoque_total.html">Estoque Total</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../index.html">Logout</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <form class="navbar-form navbar-left" action="">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <div class="input-group-btn">
+                        <button class="btn btn-outline-light" type="submit">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </nav>
+    
+    <!-- FORMULÁRIO -->
+    <div class="container mt-4">
+        <h1 class="text-center mb-4 titulo-principal">Livro que deseja Editar</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="card formulario-card p-4">
+                    <form id="formDisco" action="../../php/editar_livro.php" method="post">
+                        <h3>Dados atuais do Livro (para localizar)</h3>
+                        <div class="mb-3">
+                            <label for="titulo" class="form-label label-cor">Título</label>
+                            <input type="text" class="form-control" id="titulo" name="titulo">
+                            <div class="invalid-feedback">Preencha com o nome atual do Disco.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="autor" class="form-label label-cor">Autor</label>
+                            <input type="text" class="form-control" id="autor" name="autor">
+                            <div class="invalid-feedback">Preencha com o nome atual do Autor.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="editora" class="form-label label-cor">Editora</label>
+                            <input type="text" class="form-control" id="editora" name="editora">
+                            <div class="invalid-feedback">Insira a editora atual do disco.</div>
+                        </div>
+                        <hr>
+                        <h3>Novos dados do Livro</h3>
+                        <div class="mb-3">
+                            <label for="novoTitulo" class="form-label label-cor">Título</label>
+                            <input type="text" class="form-control" id="novoTitulo" name="novoTitulo">
+                            <div class="invalid-feedback">Preencha com o novo nome do Disco.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="novoAutor" class="form-label label-cor">Autor</label>
+                            <input type="text" class="form-control" id="novoAutor" name="novoAutor">
+                            <div class="invalid-feedback">Preencha com o novo nome do Autor.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="novaPaginas" class="form-label label-cor">Paginas</label>
+                            <input type="number" class="form-control" id="novaPaginas" name="novaPaginas">
+                            <div class="invalid-feedback">Preencha com a nova quantidade de Paginas.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="novaEditora" class="form-label label-cor">Editora</label>
+                            <input type="text" class="form-control" id="novaEditora" name="novaEditora">
+                            <div class="invalid-feedback">Insira a nova editora do disco.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="novoAno_publicacao" class="form-label label-cor">Ano de publicação</label>
+                            <input type="date" class="form-control" id="novoAno_publicacao" name="novoAno_publicacao">
+                            <div class="invalid-feedback">Insira o novo ano de publicação.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="novaQuantidade" class="form-label label-cor">Quantidade</label>
+                            <input type="number" class="form-control" id="novaQuantidade" name="novaQuantidade">
+                            <div class="invalid-feedback">Insira a nova quantidade de Discos.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="novaUrl_imagem" class="form-label label-cor">URL da Imagem</label>
+                            <input type="url" class="form-control" id="novaUrl_imagem" name="novaUrl_imagem" placeholder="https://exemplo.com/imagem.jpg">
+                        </div>
+                        <div class="mb-3">
+                            <label for="novaDescricao" class="form-label label-cor">Descrição</label>
+                            <textarea class="form-control" id="novaDescricao" name="novaDescricao" rows="5"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="novaSinopse" class="form-label label-cor">Sinopse</label>
+                            <textarea class="form-control" id="novaSinopse" name="novaSinopse" rows="5"></textarea>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-salvar">Salvar</button>
+                            <a href="../estoque/estoque_livros.html" class="btn btn-cancelar">Cancelar</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function(){ // aqui esta selecionando o arquivo formDisco
+        $('#formDisco').on('submit', function (e) { // so executa assim que clicar em salvar
+            let valido = true;
+
+            $('.form-control').removeClass('is-invalid'); // esta selecionando todos os elementos com a classe form-control
+                                                         // são comandos do bootstrap
+
+            // cria variaveis para o codigo js
+            let titulo = $('#titulo').val().trim();
+            let autor = $('#autor').val().trim();
+            let editora = $('#editora').val().trim();
+
+            // faz a verificação dos campos
+            if (titulo === '') {
+                $('#titulo').addClass('is-invalid');
+                valido = false;
+            }
+
+            if (autor === '') {
+                $('#autor').addClass('is-invalid');
+                valido = false;
+            }
+
+            if (editora === '') {
+                $('#editora').addClass('is-invalid');
+                valido = false;
+            }
+
+            if (!valido) { // não deixa enviar se o campo estiver vazio
+                e.preventDefault();
+            } else {
+                alert("Edição realizado com sucesso!");
+            }
+            });
+        });
+    </script>
+
+</body>
+</html>

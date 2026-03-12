@@ -1,0 +1,142 @@
+body {
+    background-color: #ffffff; /* fundo branco */
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.opcoes-menu {
+    margin-right: 20px;
+}
+
+.menu-navbar {
+    background-color: #1e3a8a !important;
+    border-radius: 0px 0px 15px 15px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.menu-navbar .navbar-brand {
+    font-weight: 700;
+    font-size: 25px;
+    color: #ffffff; 
+}
+
+.menu-navbar .nav-link {
+    color: #ffffff; 
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.menu-navbar .nav-link:hover,
+.menu-navbar .nav-link:focus {
+    color: #5a7db8 !important;
+    background-color: #0d1b2a; /* azul vibrante */
+    border-radius: 20px 20px 20px 20px;
+}
+
+.nome-livro {
+    color: #0d1b2a; 
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 2.6rem;
+    font-weight: bold;
+}
+
+h2 {
+    color: #0d1b2a; 
+    text-align: left;
+    font-size: 2rem;
+}
+
+h3 {
+    color: #0d1b2a; 
+    font-size: 2rem;
+}
+
+.titulo-fotos {
+    text-align: center;
+    color: #0d1b2a; 
+    margin-bottom: 20px;
+    margin-top: 80px;
+    font-size: 2.6rem;
+    font-weight: bold;
+}
+
+.texto-lateral {
+    max-width: 400px;
+    font-size: 18px;
+    padding-top: 20px;
+    color: #0d1b2a; 
+}
+
+.texto-lateral p {
+    margin: 10px 0;
+}
+
+.carousel-item img {
+    width: 100%;              
+    max-height: 600px;        
+    object-fit: contain;      
+    display: block;
+    margin: 0 auto;           
+    border: 5px solid #dbeafe;
+    border-radius: 20px 20px 60px 60px;  
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #0d1b2a;
+    border-radius: 50%;        
+    padding: 20px;             
+    background-size: 60% 60%;  
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.botoes {
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.botao-editar {
+    width: 220px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 15px 15px 30px 30px;
+    background-color: #1e3a8a;
+    color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+
+.botao-editar:hover {
+    background-color: #c7d9f1;
+    border-color: #335b8e;
+    border-radius: 20px 20px 20px 20px;
+    color: #1e3a8a;
+}
+
+
+.sinopse {
+    text-align: center;
+    color: #0d1b2a;
+}
+
+.container {
+    padding-top: 40px;
+}
+
+.alerta-remocao {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    width: 50%;
+}
