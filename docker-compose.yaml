@@ -1,0 +1,36 @@
+version: "3.7"
+
+services:
+  web:
+    image: httpd:alpine
+    ports:
+      - "4500:80"
+    volumes:
+      -/home/ubuntu/data/Sistema-de-Grenciamento-de-Sebo/trabalho/:/usr/local/apache2/htdocs
+    networks:
+      - minha-rede
+
+  db:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: "SenhaDificil123!@#"
+      MYSQL_DATABASE: "testedb"
+    ports:
+      - "3306:3306"
+    volumes:
+      - /data/mysql-C:/var/lib/mysql
+    networks:
+      - minha-rede
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    environment:
+      MYSQL_ROOT_PASSWORD: "SenhaDificil123!@#"
+    ports:
+      - "8080:80"
+    networks:
+      - minha-rede
+
+networks:
+   minha-rede:
+     driver: bridge
